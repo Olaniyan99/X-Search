@@ -1,0 +1,23 @@
+.header{
+    position: relative;
+    margin-top: 40px;
+    p{
+        color: #EB4D4D;
+        display: inline;
+        margin-left: 150px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .list{
+        float: right;
+    }
+    li{
+        display: inline-block;
+        padding-right: 40px;
+        a{
+            text-decoration: none;
+        }        
+    }
+}

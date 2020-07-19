@@ -1,0 +1,97 @@
+
+.container{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+        margin-left: 230px;
+        color: #EB4D4D;
+        font-size: 50px;
+        line-height: 80px;
+        font-weight: bolder;
+    }
+    .searchbar {
+        width: 1000px;
+        height: 50px;
+    }
+
+    .search-comp {
+      display: flex;
+      flex-direction: row;
+    }
+    input[type=text]{
+        height: 50px;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        outline: none;
+        font-size: larger;
+        font-weight: bold;
+        color: black;
+        background-color: #F9F9F9;
+      }
+    input[type=text]::placeholder{
+        font-size: 20px;
+        font-weight: 14px;
+        font-style: oblique;
+        color: rgb(155, 155, 155);
+    }
+    button{
+        font-size: medium;
+        background-color: rgb(15, 15, 15);
+        color: white;
+        border: none;
+        background-color:#EB4D4D;
+        outline: none;
+        cursor: pointer;
+        width: 100px;
+    }
+}
+
+#result {
+    float: right;
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#home {
+    transition: margin-left .5s;
+  }
+
+@keyframes slide-up-fade-in{
+    0% {
+        opacity:0;
+        transform:  translate(40px,0px)  ;
+    }
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
